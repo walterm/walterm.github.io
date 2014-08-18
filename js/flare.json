@@ -1,36 +1,16 @@
 {
   "name":"technology",
   "children": [
-    {
-      "name":"frameworks",
-      "children":[
-        {"name":"Ruby on Rails", "size":256},
-        {"name":"Django","size":256},
-        {"name":"Backbone","size":256}
-      ]
-    }
-    // {
-    //   "name":"databases",
-    //   "children": [
-    //     {"name":"mongoDB","size":256}
-    //     {"name":"MySQL","size":256}
-    //   ]
-    // },
-    // {
-    //   "name":"file systems",
-    //   "children":[
-    //     {"name":"hadoop","size":256},
-    //     {"name":"hive","size":256}
-    //   ]
-    // },
-    // {
-    //   "name":"libraries",
-    //   "children":[
-    //     {"name":"NumPy","size":256},
-    //     {"name":"Three.js","size":256},
-    //     {"name":"D3.js","size":256},
-    //     {"name":"jQuery","size":256},
-    //   ]
-    // }
+    {"name":"Ruby on Rails", "size":256},
+    {"name":"Django","size":256},
+    {"name":"Backbone","size":256},
+    {"name":"mongoDB","size":256}
+    {"name":"MySQL","size":256}
+    {"name":"hadoop","size":256},
+    {"name":"hive","size":256}
+    {"name":"NumPy","size":256},
+    {"name":"Three.js","size":256},
+    {"name":"D3.js","size":256},
+    {"name":"jQuery","size":256},
   ]
 }
