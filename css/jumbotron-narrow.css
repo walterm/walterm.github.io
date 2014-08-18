@@ -4,6 +4,13 @@ body {
   padding-bottom: 20px;
 }
 
+.circle-image{
+    /*width:300px;*/
+    /*height:300px;*/
+    border-radius:50%;
+    display:block;
+}
+
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
