@@ -16,6 +16,11 @@ a {
     display:block;
 }
 
+.section-header {
+  text-align: center;
+  font-variant: small-caps;
+}
+
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
