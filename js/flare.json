@@ -1,8 +1,8 @@
 {
   "name":"frameworks",
   "children": [
-    {
-      "name":"Ruby on Rails", "size":1024
-    }
+    {"name":"Ruby on Rails", "size":1024},
+    {"name":"Django","size":512}
+
   ]
 }
