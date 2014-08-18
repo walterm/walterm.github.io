@@ -3,7 +3,6 @@
   "children": [
     {"name":"Ruby on Rails","size":256},
     {"name":"Django","size":256},
-    {"name":"Django","size":256},
     {"name":"Backbone","size":256},
     {"name":"mongoDB","size":256}
     {"name":"MySQL","size":256}
