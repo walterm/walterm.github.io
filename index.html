@@ -157,55 +157,73 @@
         return chart;
       });
 
-      var diameter = 960,
-      format = d3.format(",d"),
-      color = d3.scale.category20c();
+var w = 1280,
+    h = 800,
+    r = 720,
+    x = d3.scale.linear().range([0, r]),
+    y = d3.scale.linear().range([0, r]),
+    node,
+    root;
 
-      var bubble = d3.layout.pack()
-      .sort(null)
-      .size([diameter, diameter])
-      .padding(1.5);
+var pack = d3.layout.pack()
+    .size([r, r])
+    .value(function(d) { return d.size; })
 
-      var svg = d3.select("#tech").append("svg")
-      .attr("width", diameter)
-      .attr("height", diameter)
-      .attr("class", "bubble");
+var vis = d3.select("#tech").insert("svg:svg", "h2")
+    .attr("width", w)
+    .attr("height", h)
+  .append("svg:g")
+    .attr("transform", "translate(" + (w - r) / 2 + "," + (h - r) / 2 + ")");
 
-      d3.json("./js/flare.json", function(error, root) {
-        var node = svg.selectAll(".node")
-        .data(bubble.nodes(classes(root))
-          .filter(function(d) { return !d.children; }))
-        .enter().append("g")
-        .attr("class", "node")
-        .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
+d3.json("./js/flare.json", function(data) {
+  node = root = data;
 
-        node.append("title")
-        .text(function(d) { return d.className + ": " + format(d.value); });
+  var nodes = pack.nodes(root);
 
-        node.append("circle")
-        .attr("r", function(d) { return d.r; })
-        .style("fill", function(d) { return color(d.packageName); });
+  vis.selectAll("circle")
+      .data(nodes)
+    .enter().append("svg:circle")
+      .attr("class", function(d) { return d.children ? "parent" : "child"; })
+      .attr("cx", function(d) { return d.x; })
+      .attr("cy", function(d) { return d.y; })
+      .attr("r", function(d) { return d.r; })
+      .on("click", function(d) { return zoom(node == d ? root : d); });
 
-        node.append("text")
-        .attr("dy", ".3em")
-        .style("text-anchor", "middle")
-        .text(function(d) { return d.className.substring(0, d.r / 3); });
+  vis.selectAll("text")
+      .data(nodes)
+    .enter().append("svg:text")
+      .attr("class", function(d) { return d.children ? "parent" : "child"; })
+      .attr("x", function(d) { return d.x; })
+      .attr("y", function(d) { return d.y; })
+      .attr("dy", ".35em")
+      .attr("text-anchor", "middle")
+      .style("opacity", function(d) { return d.r > 20 ? 1 : 0; })
+      .text(function(d) { return d.name; });
 
-        // Returns a flattened hierarchy containing all leaf nodes under the root.
-        function classes(root) {
-          var classes = [];
+  d3.select(window).on("click", function() { zoom(root); });
+});
 
-          function recurse(name, node) {
-            if (node.children) node.children.forEach(function(child) { recurse(node.name, child); });
-            else classes.push({packageName: name, className: node.name, value: node.size});
-          }
+function zoom(d, i) {
+  var k = r / d.r / 2;
+  x.domain([d.x - d.r, d.x + d.r]);
+  y.domain([d.y - d.r, d.y + d.r]);
 
-          recurse(null, root);
-          return {children: classes};
-        }
+  var t = vis.transition()
+      .duration(d3.event.altKey ? 7500 : 750);
 
-        d3.select(self.frameElement).style("height", diameter + "px");
-      });
+  t.selectAll("circle")
+      .attr("cx", function(d) { return x(d.x); })
+      .attr("cy", function(d) { return y(d.y); })
+      .attr("r", function(d) { return k * d.r; });
+
+  t.selectAll("text")
+      .attr("x", function(d) { return x(d.x); })
+      .attr("y", function(d) { return y(d.y); })
+      .style("opacity", function(d) { return k * d.r > 20 ? 1 : 0; });
+
+  node = d;
+  d3.event.stopPropagation();
+}
 });
 </script>
 </body>
