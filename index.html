@@ -1,283 +1,212 @@
-<!DOCTYPE HTML>
-<!--
-	Prologue by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Walter Menendez</title>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
-		<script src="js/jquery.min.js"></script>
-		<script src="js/jquery.scrolly.min.js"></script>
-		<script src="js/jquery.scrollzer.min.js"></script>
-		<script src="js/skel.min.js"></script>
-		<script src="js/skel-layers.min.js"></script>
-		<script src="js/init.js"></script>
-		<noscript>
-			<link rel="stylesheet" href="css/skel.css" />
-			<link rel="stylesheet" href="css/style.css" />
-			<link rel="stylesheet" href="css/style-wide.css" />
-		</noscript>
-		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
-	</head>
-	<body>
 
-		<!-- Header -->
-			<div id="header" class="skel-layers-fixed">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-				<div class="top">
+  <title>Walter Menendez</title>
 
-					<!-- Logo -->
-						<div id="logo">
-							<span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>
-							<h1 id="title">Walter Menendez</h1>
-							<p>Web Developer</p>
-						</div>
+  <!-- Bootstrap core CSS -->
+  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
 
-					<!-- Nav -->
-						<nav id="nav">
-							<!--
-							
-								Prologue's nav expects links in one of two formats:
-								
-								1. Hash link (scrolls to a different section within the page)
-								
-								   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
+  <!-- Custom styles for this template -->
+  <link href="./css/jumbotron-narrow.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/nvd3/1.1.15-beta/nv.d3.css">
 
-								2. Standard link (sends the user to another page/site)
+</head>
 
-								   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
-							
-							-->
-							<ul>
-								<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
-								<li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Portfolio</span></a></li>
-								<li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li>
-								<li><a href="#skills" id="skills-link" class="skel-layers-ignoreHref"><span class="icon fa-cog">Skills</span></a></li>
-								<li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
-							</ul>
-						</nav>
-						
-				</div>
-				
-				<div class="bottom">
+<body>
 
-					<!-- Social Icons -->
-						<ul class="icons">
-							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
-							<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-							<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
-						</ul>
-				
-				</div>
-			
-			</div>
+  <div class="container">
+    <div class="header">
+      <h3 class="text-muted">Walter Menendez</h3>
+    </div>
 
-		<!-- Main -->
-			<div id="main">
+    <div class="jumbotron">
+      <p class="lead">
+        I'm Walter, a computer science student at MIT. I've worked on various web apps and love exploring the creation of new ways to explore data. As an undergrad, I've done research in the <strong>MIT Media Lab</strong> in various lab groups. In the industry, I've been at <strong>Tumblr</strong> and <strong>MongoDB</strong>.
 
-				<!-- Intro -->
-					<section id="top" class="one dark cover">
-						<div class="container">
+        I'm also a photographer and love all things Spanish.</p>
+      </div>
 
-							<header>
-								<h2 class="alt">Hey, I'm Walter.</h2>
-								<p>Programmer, photographer, MIT '15 student.</p>
-							</header>
-							
-							<footer>
-								<a href="#portfolio" class="button scrolly" style="background-color: #999999">My work</a>
-							</footer>
+      <div class="row marketing">
+        <div class="row container">
+          <h3>Resume</h3>
+          <div class="container">
+            <div class="row">
+              <h4>MongoDB, Inc.</h4>
+              <p class="col-md-8">The MongoDB Management Service (MMS) is a dashboard to view the state of your deployed MongoDB cluster. I built a diagnostic interface for monitoring the MMS itself.</p>
+              <img class="col-md-4" src="./img/mongodb.png"></img>
+            </div>
 
-						</div>
-					</section>
-					
-				<!-- Portfolio -->
-					<section id="portfolio" class="two">
-						<div class="container">
-					
-							<header>
-								<h2>Portfolio</h2>
-							</header>
-							
-							<!-- <p>Vitae natoque dictum etiam semper magnis enim feugiat convallis convallis
-							egestas rhoncus ridiculus in quis risus amet curabitur tempor orci penatibus.
-							Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis 
-							fusce hendrerit lacus ridiculus.</p> -->
-							<center>
-								<h3>MIT</h3>
-								<p>Text here.</p>
-								<table class="portfolio-table">
-									<tr>
-										<td class="left">
-											<iframe class="vine-embed" src="https://vine.co/v/MuEarqqPupg/embed/simple" width="320" height="320" frameborder="0"></iframe><script async src="//platform.vine.co/static/scripts/embed.js" charset="utf-8"></script>
-										</td>
-										<td class="right">
-											<strong>LuminAR</strong> <br/>
-											<p>Text here.</p>
-										</td>
-									</tr>
-									<tr>
-										<td class="left"><img src="http://placehold.it/320x320"></td>
-										<td class="right">Vision Blocks</td>
-									</tr>
-									<tr>
-										<td class="left"><img src="http://placehold.it/320x320"></td>
-										<td class="right">AIGRE</td>
-									</tr>
-									<tr>
-										<td class="left"><img src="http://placehold.it/320x320"></td>
-										<td class="right">Geosense</td>
-									</tr>
-								</table>
-								
-							</center>
-							<center>
-								<h3>INDUSTRY</h3>
-								<table class="portfolio-table">
-									<tr>
-										<td class="left"><img src="http://placehold.it/320x320"></td>
-										<td class="right">Tumblr</td>
-									</tr>
-									<tr>
-										<td class="left"><img src="http://placehold.it/320x320"></td>
-										<td class="right">MongoDB</td>
-									</tr>
-								</table>
-							</center>
-						
-							<!-- <div class="row">
-								<div class="4u">
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
-										<header>
-											<h3>Ipsum Feugiat</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
-										<header>
-											<h3>Rhoncus Semper</h3>
-										</header>
-									</article>
-								</div>
-								<div class="4u">
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
-										<header>
-											<h3>Magna Nullam</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
-										<header>
-											<h3>Natoque Vitae</h3>
-										</header>
-									</article>
-								</div>
-								<div class="4u">
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
-										<header>
-											<h3>Dolor Penatibus</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
-										<header>
-											<h3>Orci Convallis</h3>
-										</header>
-									</article>
-								</div>
-							</div> -->
+            <div class="row">
+              <h4>LuminAR, Fluid Interfaces</h4>
+              <p class="col-md-8">
+                LuminAR is a projection-based AR platform.I built a lighting engine for it, leading to the development of a single player game. My project was an exploration in bringing gaming to the device.
+              </p>
+              <img class="col-md-4" src="./img/medialab.png"></img>
+            </div>
 
-						</div>
-					</section>
+            <div class="row">
+              <h4>Tumblr, Inc.</h4>
+              <p class="col-md-8">As a search engineering intern, I built a trending analytics visualization. I also ran an experiment to evaluate the performance of a different trending content signal, improving our trending tag results.</p>
+              <img class="col-md-4" src="./img/tumblr.png"></img>
+            </div>
+            <div class="row">
+              <h4>Vision Blocks, Camera Culture</h4>
+              <p class="col-md-8">
+                I was a frontend developer, fleshing out new features for the drag-and-drop motion capture scripting interface. I implemented a new intruder alert script.
+              </p>
+              <img class="col-md-4" src="./img/medialab.png"></img>
+            </div>
 
-				<!-- About Me -->
-					<section id="about" class="three">
-						<div class="container">
+            <div class="row">
+              <h4>AIGRE, Software Agents</h4>
+              <p class="col-md-8">
+                I refactored various search algorithms for AIGRE, a research project in phrase vagueness and ambiguity. I was able to improve the quality of results through various tweaks of standard search algorithms.
+              </p>
+              <img class="col-md-4" src="./img/medialab.png"></img>
+            </div>
 
-							<header>
-								<h2>About Me</h2>
-							</header>
+            <div class="row">
+              <h4>Geosense, Tangible Media Group</h4>
+              <p class="col-md-8">I maintained a large geospatial set and rendered an AR hacked globe. The project was under Anthony Devincenzi's thesis, exploring how people can socialize with their data.</p>
+              <img class="col-md-4" src="./img/medialab.png"></img>
+            </div>
 
-							<a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
-							
-							<p>Tincidunt eu elit diam magnis pretium accumsan etiam id urna. Ridiculus 
-							ultricies curae quis et rhoncus velit. Lobortis elementum aliquet nec vitae 
-							laoreet eget cubilia quam non etiam odio tincidunt montes. Elementum sem 
-							parturient nulla quam placerat viverra mauris non cum elit tempus ullamcorper 
-							dolor. Libero rutrum ut lacinia donec curae mus vel quisque sociis nec 
-							ornare iaculis.</p>
+          </div>
+        </div>
 
-						</div>
-					</section>
-			
-				<!-- Contact -->
-					<section id="skills" class="four">
-						<div class="container">
+        <div>
+          <h4>Skills</h4>
+          <div id="chart">
+            <svg></svg>
+          </div>
 
-							<header><h2>Skills</h2></header>
+          <div id="tech">
+          </div>
+        </div>
+      </div>
 
-							<table>
+    </div> <!-- /container -->
 
-							</table>
 
-						</div>
-					</section>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/nvd3/1.1.15-beta/nv.d3.js"></script>
+    <script>
+    $(function(){
+      var data = [
+      {
+        key: "Proficiency (out of 5)",
+        values: [
+        {
+          "label":"JavaScript",
+          "value": 4.5  
+        },
+        {
+          "label":"Java",
+          "value": 4.0
+        },
+        {
+          "label": "Python",
+          "value": 4.5
+        },
+        {
+          "label": "C++",
+          "value": 3.5
+        },
+        {
+          "label":"Ruby",
+          "value":3.0
+        },
+        {
+          "label":"PHP",
+          "value":3.0
+        }
+        ]
+      }
+      ];
 
-					<section id="contact" class="five">
-						<div class="container">
+      nv.addGraph(function() {
+        var chart = nv.models.multiBarHorizontalChart()
+        .x(function(d) { return d.label })
+        .y(function(d) { return d.value })
+        .margin({top: 30, right: 20, bottom: 50, left: 175})
+        .showValues(true)
+        .tooltips(false)
+        .showControls(false);
 
-						<header>
-								<h2>Contact</h2>
-							</header>
+        chart.yAxis
+        .tickFormat(d3.format(',.2f'));
 
-							<p>Elementum sem parturient nulla quam placerat viverra 
-							mauris non cum elit tempus ullamcorper dolor. Libero rutrum ut lacinia 
-							donec curae mus. Eleifend id porttitor ac ultricies lobortis sem nunc 
-							orci ridiculus faucibus a consectetur. Porttitor curae mauris urna mi dolor.</p>
-							
-							<form method="post" action="#">
-								<div class="row half">
-									<div class="6u"><input type="text" name="name" placeholder="Name" /></div>
-									<div class="6u"><input type="text" name="email" placeholder="Email" /></div>
-								</div>
-								<div class="row half">
-									<div class="12u">
-										<textarea name="message" placeholder="Message"></textarea>
-									</div>
-								</div>
-								<div class="row">
-									<div class="12u">
-										<input type="submit" value="Send Message" />
-									</div>
-								</div>
-							</form>
-							
-						</div>
-					</section>
-			
-			</div>
+        d3.select('#chart svg')
+        .datum(data)
+        .transition().duration(500)
+        .call(chart);
 
-		<!-- Footer -->
-			<div id="footer">
-				
-				<!-- Copyright -->
-					<ul class="copyright">
-						<li>&copy; Untitled. All rights reserved.</li>
-						<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				
-			</div>
+        nv.utils.windowResize(chart.update);
 
-	</body>
+        return chart;
+      });
+
+      var diameter = 960,
+      format = d3.format(",d"),
+      color = d3.scale.category20c();
+
+      var bubble = d3.layout.pack()
+      .sort(null)
+      .size([diameter, diameter])
+      .padding(1.5);
+
+      var svg = d3.select("body").append("svg")
+      .attr("width", diameter)
+      .attr("height", diameter)
+      .attr("class", "bubble");
+
+      d3.json("./js/flare.json", function(error, root) {
+        var node = svg.selectAll(".node")
+        .data(bubble.nodes(classes(root))
+          .filter(function(d) { return !d.children; }))
+        .enter().append("g")
+        .attr("class", "node")
+        .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
+
+        node.append("title")
+        .text(function(d) { return d.className + ": " + format(d.value); });
+
+        node.append("circle")
+        .attr("r", function(d) { return d.r; })
+        .style("fill", function(d) { return color(d.packageName); });
+
+        node.append("text")
+        .attr("dy", ".3em")
+        .style("text-anchor", "middle")
+        .text(function(d) { return d.className.substring(0, d.r / 3); });
+
+        // Returns a flattened hierarchy containing all leaf nodes under the root.
+        function classes(root) {
+          var classes = [];
+
+          function recurse(name, node) {
+            if (node.children) node.children.forEach(function(child) { recurse(node.name, child); });
+            else classes.push({packageName: name, className: node.name, value: node.size});
+          }
+
+          recurse(null, root);
+          return {children: classes};
+        }
+
+        d3.select(self.frameElement).style("height", diameter + "px");
+      });
+});
+</script>
+</body>
 </html>
